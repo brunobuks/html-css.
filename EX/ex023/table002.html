@@ -12,6 +12,7 @@
         table {
             width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -25,6 +26,16 @@
 
         thead {
             background-color: lightblue;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: lightblue;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgoldenrodyellow;
         }
 
         .number {
@@ -46,8 +57,8 @@
     <table>
         <thead>
             <tr>
-                <th>State</th>
-                <th>Population</th>
+                <th scope="col">State</th>
+                <th scope="col">Population</th>
             </tr>
         </thead>
         <tbody>
@@ -94,7 +105,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total Population</th>
+                <th scope="row">Total Population</th>
                 <td id="none"><strong>00 000 000</strong></td>
             </tr>
         </tfoot>
