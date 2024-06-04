@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 600px;
+            border-collapse: collapse;
+
+        }
+        caption {
+            padding: 10px;
+            font-size: 1.3em;
+        }
+        tr, th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            background-color: rgba(140, 255, 140, 0.493);
+        }
+
+        td:hover {
+            background-color: rgb(66, 255, 66);
+        }
+
+        .title {
+            background-color: lightskyblue;
+        }
+
+        .title:hover {
+            background-color: rgb(71, 71, 255);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Table</h1>
+    <table>
+        <caption>
+            Favorite Movies
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col" class="title">Group</th>
+                <th scope="col" class="title">Names</th>
+                <th scope="colgroup" colspan="3" class="title">Movies</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3" class="title">Womans</th>
+                <td>Name 01</td>
+                <td>Movie 01</td>
+                <td>Movie 02</td>
+                <td>Movie 03</td>
+            </tr>
+            <tr>
+                <td>Name 02</td>
+                <td>Movie 01</td>
+                <td>Movie 02</td>
+                <td>Movie 03</td>
+            </tr>
+            <tr>
+                <td>Name 03</td>
+                <td>Movie 01</td>
+                <td>Movie 02</td>
+                <td>Movie 03</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3" class="title">Mans</th>
+                <td>Name 04</td>
+                <td>Movie 01</td>
+                <td>Movie 02</td>
+                <td>Movie 03</td>
+            </tr>
+            <tr>
+                <td>Name 05</td>
+                <td>Movie 01</td>
+                <td>Movie 02</td>
+                <td>Movie 03</td>
+            </tr>
+            <tr>
+                <td>Name 06</td>
+                <td>Movie 01</td>
+                <td>Movie 02</td>
+                <td>Movie 03</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

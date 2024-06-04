@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        tr, td, th {
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        th {
+            background-color: lightgreen;
+        }
+
+        td {
+            background-color: rgb(251, 192, 201);
+        }
+
+        td:hover {
+            background-color: lightcoral;
+        }
+
+        .colunm {
+            background-color: lightskyblue;
+        }
+
+        .row {
+            text-align: left;
+            font-weight: bold;
+            background-color: lightskyblue;
+        }
+
+        .row2 {
+            background-color: lightskyblue;
+            font-weight: bold;
+        }
+
+        .row:hover {
+            background-color: lightskyblue;
+        }
+
+        .row2:hover {
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th scope="row" rowspan="2" class="colunm">Field</th>
+                <th scope="row" rowspan="2" class="colunm">Subjects</th>
+                <th scope="rowgroup" colspan="2" class="colunm">Grade</th>
+                <th scope="row" rowspan="2" class="colunm">Avarege</th>
+            </tr>
+            <tr>
+                <th scope="row" class="colunm">Grade 01</th>
+                <th scope="row" class="colunm">Grade 02</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="colgroup" rowspan="4">Exact</th>
+                <td>Subject 01</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Subject 02</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Subject 03</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Subject 04</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="row">Exact Avarege</td>
+                <td class="row2">0.0</td>
+            </tr>
+            <tr>
+                <th scope="colgroup" rowspan="2">Humans</th>
+                <td>Subject 05</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Subject 06</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="row">Humans Avarege</td>
+                <td class="row2">0.0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
