@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-weight: bolder;
+            font-size: 1.3em;
+            padding-bottom: 10px;
+        }
+
+        th, td {
+            text-align: center;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        .cname {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tables</h1>
+    <table>
+        <colgroup>
+            <col class="cname">
+            <col class="cgender">
+            <col class="cage">
+            <col class="cjob">
+        </colgroup>
+        <caption>Sing-Up</caption>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Age</th>
+            <th scope="col">Job</th>
+        </tr>
+        <tr>
+            <td>Name 01</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Job 01</td>
+        </tr>
+        <tr>
+            <td>Name 02</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Job 02</td>
+        </tr>
+        <tr>
+            <td>Name 03</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Job 03</td>
+        </tr>
+        <tr>
+            <td>Name 04</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Job 04</td>
+        </tr>
+        <tr>
+            <td>Name 05</td>
+            <td>F</td>
+            <td>39</td>
+            <td>Job 05</td>
+        </tr>
+        <tr>
+            <td>Name 06</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Job 06</td>
+        </tr>
+    </table>
+</body>
+</html>
