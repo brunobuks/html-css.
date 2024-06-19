@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <form action="sign-up.php" method="get">
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" name="gender" id="male" checked>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+        </fieldset>
+        <fieldset>
+            <legend>Sports</legend>
+            <input type="checkbox" name="basket" id="basket"> <label for="basket">Basket</label><br>
+            <input type="checkbox" name="soccer" id="soccer"> <label for="soccer">Soccer</label><br>
+            <input type="checkbox" name="swimming" id="swimming"> <label for="swimming">Swimming</label><br>
+            <input type="checkbox" name="tennis" id="tennis"> <label for="tennis">Tennis</label>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Send">
+            <input type="reset" value="Erase">
+        </p>
+    </form>
+</body>
+</html>

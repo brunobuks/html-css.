@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <form action="sign-up.php" method="get" autocomplete="on">
+        <p>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required maxlength="30" placeholder="Insert Your Name" autocomplete="name">
+        </p>
+        <p>
+            <label for="average">Average</label>
+            <input type="number" name="average" id="average" min="1" max="10" placeholder="0 to 10" step="0.1" value="5" required>
+        </p>
+        <p>
+            <label for="month">Month</label>
+            <input type="month" name="month" id="month" value="2024-06" required>
+        </p>
+        <p>
+            <label for="day">Day</label>
+            <input type="date" name="day" id="day" value="2024-06-18" required>
+        </p>
+        <p>
+            <label for="hour">Test Time</label>
+            <input type="time" name="hour" id="hour" value="22:22">
+        </p>
+        <p>
+            <input type="submit" value="Send">
+            <input type="reset" value="Erase">
+        </p>
+    </form>
+</body>
+</html>
