@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <form action="sign-up.php" method="get">
+        <p>
+            <label for="state">State</label>
+            <select name="state" id="state">
+                <option value="" selected>----Select----</option>
+                <optgroup label="First">
+                    <option value="op1">Option 1</option>
+                    <option value="op2">Option 2</option>
+                    <option value="op3">Option 3</option>
+                    <option value="op4">Option 4</option>
+                    <option value="op5">Option 5</option>
+                </optgroup>
+                <optgroup label="Second">
+                    <option value="op1">Option 6</option>
+                    <option value="op2">Option 7</option>
+                    <option value="op3">Option 8</option>
+                    <option value="op4">Option 9</option>
+                    <option value="op5">Option 10</option>
+                </optgroup>
+
+            </select>
+        </p>
+        <p>
+            <label for="job">Job</label>
+            <input type="text" name="job" id="job" list="joblist">
+            <datalist id="joblist">
+                <option value="op1">Option 1</option>
+                <option value="op2">Option 2</option>
+                <option value="op3">Option 3</option>
+                <option value="op4">Option 4</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="msg">Message</label><br>
+            <textarea name="msg" id="msg" cols="100" rows="20"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
+        </p>
+    </form>
+</body>
+</html>
