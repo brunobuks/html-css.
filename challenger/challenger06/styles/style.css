@@ -8,5 +8,52 @@
     color05: #E68A00 (yellow)
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
+* {
+    font-family: "Josefin Sans", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
+body, html {
+    background-color: #331924;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    border: 1.5px solid black;
+    box-shadow: 5px 5px 10px #e68a0081;
+    transition: width 1.5s, heith 1.5s;
+    transition-timing-function: ease;
+}
+
+#img {
+    background: #331924 url(../images/login-screen-500px.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
+    display: block;
+}
+
+#form {
+    display: block;
+    padding: 10px;
+}
